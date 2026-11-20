@@ -55,3 +55,5 @@ Forest
 ```
 
 `company.local` and `partner.com` have different names, so they’re separate trees, but they sit in the same forest and share the same underlying AD structure.
+
+**Analogy**: the forest is the whole world. Trees are countries, domains are cities. It’s the biggest container, and nothing is above it.
