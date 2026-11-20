@@ -64,3 +64,8 @@ By default, domains are isolated. A user in Domain A can’t touch resources in 
 
 **Analogy**: a visa agreement between countries. Without one, you can’t enter.
 
+ There are 2 major keypoints:
+
+ - Trusts have a direction. If A trusts B, B’s users can access A’s resources, not necessarily the other way around.
+ - **Inside one forest, trusts between domains are created automatically**, so you don’t set them up by hand.
+
