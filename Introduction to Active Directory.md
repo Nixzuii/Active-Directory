@@ -9,5 +9,5 @@ Imagine a company with 500 employees and 500 computers. Without **AD (Active Dir
 
 ## The 2 Jobs: Authentication & Authorization.
 
-| Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
+|  | Question | Real-life example | AD example |
+| --- | --- | --- | --- |
