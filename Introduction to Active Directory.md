@@ -21,3 +21,10 @@ Imagine a company with 500 employees and 500 computers. Without **AD (Active Dir
 ### Component 1: Domain
 
 A domain is a logical group of users, computers, and resources that share one AD database and one set of security rules. Example: `company.local`. Think of it as one company’s private territory. Everyone inside follows the same rules and is listed in the same directory.
+
+### Component 2: Domain Controller (DC)
+
+The DC is the Windows Server that runs AD. It does two things:
+
+- **Stores the database** of every user, computer, and group (the “records office”).
+- **Handles every login request** (the “security guard”).
