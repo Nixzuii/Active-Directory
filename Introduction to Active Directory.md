@@ -13,3 +13,5 @@ Imagine a company with 500 employees and 500 computers. Without **AD (Active Dir
 | --- | --- | --- | --- |
 | Authentication | Who are you? | Showing your ID at the airport | Logging in with username and password |
 | Authorization | What are you allowed to do? | Your boarding pass only lets you onto your flight | You can open the HR folder but not Finance |
+
+**Order matters**: you always authenticate first, then you get authorized. You can’t decide what someone may access before knowing who they are.
