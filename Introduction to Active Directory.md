@@ -29,6 +29,15 @@ The DC is the Windows Server that runs AD. It does two things:
 - **Stores the database** of every user, computer, and group (the “records office”).
 - **Handles every login request** (the “security guard”).
 
-When you type your password at your PC, the PC doesn’t decide whether it’s correct. It asks the DC, and the DC replies yes or no.
+When we type our password in our PC, the PC doesn’t decide whether it’s correct. It asks the DC, and the DC replies yes or no.
 
 > Companies usually run several DCs that copy each other’s data (called replication). If one fails, the others keep everyone working.
+
+### Component 3: Tree
+
+A tree is a group of domains that share one naming structure (namespace).
+
+- Parent: `company.local`
+- Children: `sales.company.local` and `hr.company.local`
+
+Notice that the children’s names end with the parent’s name. That’s what makes it a tree. Think of a company headquarters with regional branches, all under one brand name.
