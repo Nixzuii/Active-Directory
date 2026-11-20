@@ -20,4 +20,4 @@ Imagine a company with 500 employees and 500 computers. Without **AD (Active Dir
 
 ### Component 1: Domain
 
-A domain is a logical group of users, computers, and resources that share one AD database and one set of security rules. Example: `company.local`
+A domain is a logical group of users, computers, and resources that share one AD database and one set of security rules. Example: `company.local`. Think of it as one company’s private territory. Everyone inside follows the same rules and is listed in the same directory.
