@@ -69,3 +69,6 @@ By default, domains are isolated. A user in Domain A can’t touch resources in 
  - Trusts have a direction. If A trusts B, B’s users can access A’s resources, not necessarily the other way around.
  - **Inside one forest, trusts between domains are created automatically**, so you don’t set them up by hand.
 
+## Organizational Units (OUs): organizing inside a domain
+
+A domain can hold thousands of objects. OUs are folders that keep them tidy. Example: an OU called “Sales” holds the sales team’s users and PCs. OUs matter because you can apply policies to a whole OU at once, such as “all Sales PCs must lock after 5 minutes.”
