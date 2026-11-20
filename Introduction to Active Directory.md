@@ -61,3 +61,6 @@ Forest
 ### Component 5: Trust Relationship
 
 By default, domains are isolated. A user in Domain A can’t touch resources in Domain B. A trust is an agreement that says: “*Domain A, I’ll accept your users as legitimate.*”
+
+**Analogy**: a visa agreement between countries. Without one, you can’t enter.
+
