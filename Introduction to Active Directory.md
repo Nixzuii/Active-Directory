@@ -15,3 +15,9 @@ Imagine a company with 500 employees and 500 computers. Without **AD (Active Dir
 | Authorization | What are you allowed to do? | Your boarding pass only lets you onto your flight | You can open the HR folder but not Finance |
 
 **Order matters**: you always authenticate first, then you get authorized. You can’t decide what someone may access before knowing who they are.
+
+## The 5 Components of an Active Direcory.
+
+### Component 1: Domain
+
+A domain is a logical group of users, computers, and resources that share one AD database and one set of security rules. Example: `company.local`
