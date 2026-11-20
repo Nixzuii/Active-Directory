@@ -41,3 +41,16 @@ A tree is a group of domains that share one naming structure (namespace).
 - Children: `sales.company.local` and `hr.company.local`
 
 Notice that the children’s names end with the parent’s name. That’s what makes it a tree. Think of a company headquarters with regional branches, all under one brand name.
+
+### Component 4: Forest
+
+A forest is the top-level container holding one or more trees. It’s the outermost boundary of AD.
+
+```
+Forest
+├── Tree 1: company.local
+│     ├── sales.company.local
+│     └── hr.company.local
+└── Tree 2: partner.com
+```
+
