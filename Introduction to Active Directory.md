@@ -85,3 +85,9 @@ Forest        = the whole world
 Trust         = visa agreements between cities/countries
 DC            = the city hall (records + security guard)
 ```
+
+### Why attackers care
+
+- AD exists in almost every big company, so it’s the #1 target.
+- If an attacker takes over AD (especially the DC), they control every user and every computer, like stealing the master key to the whole building.
+- The usual way in is misconfiguration: weak passwords and accounts with too many privileges.
