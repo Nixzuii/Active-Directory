@@ -57,3 +57,7 @@ Forest
 `company.local` and `partner.com` have different names, so they’re separate trees, but they sit in the same forest and share the same underlying AD structure.
 
 **Analogy**: the forest is the whole world. Trees are countries, domains are cities. It’s the biggest container, and nothing is above it.
+
+### Component 5: Trust Relationship
+
+By default, domains are isolated. A user in Domain A can’t touch resources in Domain B. A trust is an agreement that says: “*Domain A, I’ll accept your users as legitimate.*”
