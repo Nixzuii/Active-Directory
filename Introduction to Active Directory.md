@@ -73,3 +73,15 @@ By default, domains are isolated. A user in Domain A can’t touch resources in 
 
 A domain can hold thousands of objects. OUs are folders that keep them tidy. Example: an OU called “Sales” holds the sales team’s users and PCs.  
 OUs matter because you can apply policies to a whole OU at once, such as “all Sales PCs must lock after 5 minutes.”
+
+## Everything Together
+
+```bash
+Forest        = the whole world
+  Tree        = a country (one naming family)
+    Domain    = a city (own database + rules)
+      OU      = a neighborhood or folder
+        Objects = people, computers, printers
+Trust         = visa agreements between cities/countries
+DC            = the city hall (records + security guard)
+```
