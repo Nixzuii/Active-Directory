@@ -28,3 +28,7 @@ The DC is the Windows Server that runs AD. It does two things:
 
 - **Stores the database** of every user, computer, and group (the “records office”).
 - **Handles every login request** (the “security guard”).
+
+When you type your password at your PC, the PC doesn’t decide whether it’s correct. It asks the DC, and the DC replies yes or no.
+
+> Companies usually run several DCs that copy each other’s data (called replication). If one fails, the others keep everyone working.
