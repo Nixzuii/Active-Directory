@@ -11,3 +11,4 @@ Imagine a company with 500 employees and 500 computers. Without **AD (Active Dir
 
 |  | Question | Real-life example | AD example |
 | --- | --- | --- | --- |
+| Authentication | Who are you? | Showing your ID at the airport | Logging in with username and password |
