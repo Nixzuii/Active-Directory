@@ -20,4 +20,6 @@ If there's one DC and it breaks, nobody can log in. So companies run 2 or more D
 
 **Analogy**: two bank branches that both hold the same customer records. If one burns down, the other keeps working.
 
-Two terms to just recognize
+## Part 2: Tree and Forest Structure
+
+**Domain** is a single security territory, e.g. `company.local`, **Tree** is a group of domains sharing one naming pattern, **Forest** is one or more trees together.
