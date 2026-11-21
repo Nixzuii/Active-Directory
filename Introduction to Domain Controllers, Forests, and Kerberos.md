@@ -40,10 +40,34 @@ A **trust** means "domain A is willing to accept domain B's users." When you cre
 
 **Two-way**: both sides trust each other. (Compare to one-way: "I trust you, but you don't trust me.") 
 
-**Two-way**: both sides trust each other. (Compare to one-way: "I trust you, but you don't trust me.")
-
 > If A trusts B, and B trusts C, then A trusts C.
 
 Example: `sales` trusts `company` (its parent), and `company` trusts `hr`. Because trust is transitive, `sales` and `hr` can work together even though they never directly connected. So a `sales` user can be given access to an `HR` resource if permissions allow.
 
 **Important**: trust doesn't mean automatic access. A trust only means "you're allowed to be considered." The actual permissions still have to be granted.
+
+### Forest
+
+A forest is one or more trees that share three things:
+
+- The same schema: the "rulebook" defining what kinds of objects can exist (user, computer, printer, and their attributes).
+- The same Global Catalog.
+- The same forest root domain: the very first domain ever created.
+
+A second tree can live in the same forest even with an unrelated name. For example, `company.local` and `partner.com` could be two trees in one forest. They don't share a naming pattern, but they share the schema and catalog.
+
+## Kerberos Authentication
+
+Without Kerberos, every time we open a file share, our PC would send our password across the network. Anyone listening could grab it. Kerberos lets us prove who we are without sending our password each time. Lets connect it with a theme park analogy:
+
+1. At the entrance, we show our ID and get a day wristband. This is the TGT (Ticket Granting Ticket).
+2. At each ride, we show the wristband and get a ride ticket. This is a service ticket.
+3. We hand the ride ticket to the operator and get on. We never show our ID again.
+
+**The three players**:
+
+- Client: we, on our PC.
+- KDC (Key Distribution Center): the ticket office. It lives on the DC and has two parts:
+  - AS (Authentication Service): checks our ID and issues the TGT
+  - TGS (Ticket Granting Service): swaps our TGT for service tickets
+- Service: the thing we want (file server, website, etc.)
