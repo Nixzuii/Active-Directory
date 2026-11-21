@@ -22,4 +22,14 @@ If there's one DC and it breaks, nobody can log in. So companies run 2 or more D
 
 ## Part 2: Tree and Forest Structure
 
-**Domain** is a single security territory, e.g. `company.local`, **Tree** is a group of domains sharing one naming pattern, **Forest** is one or more trees together.
+**Domain** is a single security territory, e.g. `company.local`, **Tree** is a group of domains sharing one naming pattern, **Forest** is one or more trees together.  
+
+A child domain is a sub-division, and its name extends its parent's:
+
+```bash
+company.local          (parent)
+ ├─ sales.company.local   (child)
+ └─ hr.company.local      (child)
+```
+
+Notice the children's names contain the parent's name. That shared, building-on-each-other naming is called a contiguous namespace. Everything in that group is a tree.
