@@ -45,3 +45,5 @@ A **trust** means "domain A is willing to accept domain B's users." When you cre
 > If A trusts B, and B trusts C, then A trusts C.
 
 Example: `sales` trusts `company` (its parent), and `company` trusts `hr`. Because trust is transitive, `sales` and `hr` can work together even though they never directly connected. So a `sales` user can be given access to an `HR` resource if permissions allow.
+
+**Important**: trust doesn't mean automatic access. A trust only means "you're allowed to be considered." The actual permissions still have to be granted.
