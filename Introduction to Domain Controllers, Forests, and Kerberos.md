@@ -79,3 +79,27 @@ Without Kerberos, every time we open a file share, our PC would send our passwor
 Our PC says "***I am Cristiano Ronaldo, give me a TGT.***" To prove it's really us, it sends the current timestamp encrypted with our password hash. The password itself never travels. This proof is called pre-authentication. 
 
 ***Theme park:*** *show ID at the entrance*
+
+**Step 2: AS-REP (KDC → you)**
+
+The KDC decrypts our timestamp using its copy of our hash. If it works, we're real. It returns a TGT, encrypted with the krbtgt account's key. We can't read the TGT, we just carry it.
+
+***Theme park:*** *receive the wristband*
+
+**Step 3: TGS-REQ (you → KDC)**
+
+We show the TGT and say "I want to access the file server."
+
+***Theme park:*** *show the wristband at the ride.*
+
+**Step 4: TGS-REP (KDC → you)**
+
+The KDC verifies the TGT and gives us a service ticket for that specific service.
+
+***Theme park:*** *receive the ride ticket.*
+
+**Step 5: AP-REQ (you → service)**
+
+You hand the service ticket to the file server. It accepts and lets you in.
+
+***Theme park:*** *hand the ticket to the operator.*
