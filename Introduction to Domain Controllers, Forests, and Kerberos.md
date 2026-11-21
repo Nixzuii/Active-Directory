@@ -7,6 +7,6 @@ A DC is just a **Windows Server with the "AD DS"** role installed. Installing th
 Jobs done by DC:
 
 | Job | Plain-English meaning | Why it matters |
-| :---: | :---: | :---: |
+| --- | --- | --- |
 | **Stores the AD database** | Keeps one file, `NTDS.dit`, listing every user, computer, group, and password hash | Attackers who steal this file get everyone's credentials, which is why DCs are the ultimate target |
 | Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
