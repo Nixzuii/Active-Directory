@@ -43,3 +43,5 @@ A **trust** means "domain A is willing to accept domain B's users." When you cre
 **Two-way**: both sides trust each other. (Compare to one-way: "I trust you, but you don't trust me.")
 
 > If A trusts B, and B trusts C, then A trusts C.
+
+Example: `sales` trusts `company` (its parent), and `company` trusts `hr`. Because trust is transitive, `sales` and `hr` can work together even though they never directly connected. So a `sales` user can be given access to an `HR` resource if permissions allow.
