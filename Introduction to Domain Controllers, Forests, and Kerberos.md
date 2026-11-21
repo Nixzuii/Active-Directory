@@ -7,12 +7,6 @@ A DC is just a **Windows Server with the "AD DS"** role installed. Installing th
 Jobs done by DC:
 
 | Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
 | Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
-
-
-| Left | Center | Right |
-| :--- | :---: | ---: |
-| Text | Text | 100 |
-| More text | More text | 250 |
