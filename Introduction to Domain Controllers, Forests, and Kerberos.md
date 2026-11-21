@@ -9,4 +9,7 @@ Jobs done by DC:
 | Job | Plain-English meaning | Why it matters |
 | :--- | :--- | :--- |
 | **Stores the AD database** | Keeps one file, `NTDS.dit`, listing every user, computer, group, and password hash | Attackers who steal this file get everyone's credentials, which is why DCs are the ultimate target |
-| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
+| **Authenticates logins** | Checks "are you really who you say you are?" using Kerberos | Without it, nobody can log in |
+| **Replicates** | Copies changes to other DCs | Keeps all DCs identical |
+| **Delivers Group Policy** | Pushes rules (e.g. "password must be 12 characters") to all computers via a shared folder called SYSVOL | Admins manage thousands of PCs from one place |
+| **Usually runs DNS** | Acts as the network's phone book | Computers find the DC through DNS |
