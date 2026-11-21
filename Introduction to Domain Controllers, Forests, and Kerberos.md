@@ -13,3 +13,9 @@ Jobs done by DC:
 | **Replicates** | Copies changes to other DCs | Keeps all DCs identical |
 | **Delivers Group Policy** | Pushes rules (e.g. "password must be 12 characters") to all computers via a shared folder called SYSVOL | Admins manage thousands of PCs from one place |
 | **Usually runs DNS** | Acts as the network's phone book | Computers find the DC through DNS |
+
+### Why have more than one DC?
+
+If there's one DC and it breaks, nobody can log in. So companies run 2 or more DCs that sync with each other. If you create a user on DC1, DC2 gets a copy moments later. That's called **replication**.  
+
+**Analogy**: two bank branches that both hold the same customer records. If one burns down, the other keeps working.
