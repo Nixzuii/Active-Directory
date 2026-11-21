@@ -71,3 +71,11 @@ Without Kerberos, every time we open a file share, our PC would send our passwor
   - AS (Authentication Service): checks our ID and issues the TGT
   - TGS (Ticket Granting Service): swaps our TGT for service tickets
 - Service: the thing we want (file server, website, etc.)
+
+### The 5-step flow in detail
+
+**Step 1: AS-REQ (you → KDC)** 
+
+Our PC says "***I am Cristiano Ronaldo, give me a TGT.***" To prove it's really us, it sends the current timestamp encrypted with our password hash. The password itself never travels. This proof is called pre-authentication. 
+
+***Theme park:*** *show ID at the entrance*
