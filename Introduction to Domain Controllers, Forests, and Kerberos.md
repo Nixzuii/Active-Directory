@@ -33,3 +33,7 @@ company.local          (parent)
 ```
 
 Notice the children's names contain the parent's name. That shared, building-on-each-other naming is called a contiguous namespace. Everything in that group is a tree.
+
+### Trusts: How domains agree to cooperate
+
+A **trust** means "domain A is willing to accept domain B's users." When you create a child domain, AD **automatically** sets up a trust with its parent. It's **two-way** and **transitive**.
