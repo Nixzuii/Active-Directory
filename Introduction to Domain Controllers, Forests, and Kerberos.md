@@ -38,4 +38,8 @@ Notice the children's names contain the parent's name. That shared, building-on-
 
 A **trust** means "domain A is willing to accept domain B's users." When you create a child domain, AD **automatically** sets up a trust with its parent. It's **two-way** and **transitive**. 
 
+**Two-way**: both sides trust each other. (Compare to one-way: "I trust you, but you don't trust me.") 
+
 **Two-way**: both sides trust each other. (Compare to one-way: "I trust you, but you don't trust me.")
+
+> If A trusts B, and B trusts C, then A trusts C.
