@@ -127,21 +127,21 @@ A non-default share called **`backup`** stood out, readable by this account. Aft
 smbclient //10.48.160.211/backup -U 'svc-admin'
 ```
 
-![Connecting to the backup share and listing its contents](images/attactive-dc-8.png)
+<img width="1502" height="812" alt="image" src="https://github.com/user-attachments/assets/d49432f8-1cd8-4617-8491-40fdd1e8de69" />
 
 Inside was a single file: `backup_credentials.txt`. It was downloaded:
 
-![Downloading backup_credentials.txt from the share](images/attactive-dc-9.png)
+<img width="1511" height="812" alt="image" src="https://github.com/user-attachments/assets/ebcdf62c-d85f-4314-ac54-93c578b631f6" />
 
 ### Step 7 — Decoding the Backup Credentials
 
 The file's contents were printed and turned out to be a Base64 string:
 
-![cat backup_credentials.txt showing a Base64 blob](images/attactive-dc-10.png)
+<img width="1499" height="812" alt="image" src="https://github.com/user-attachments/assets/2398d7b5-f3ab-4533-8a32-91189f0e3366" />
 
 That string was decoded using an online Base64 decoder:
 
-![Base64 decode revealing backup:backup2517860](images/attactive-dc-11.png)
+<img width="1498" height="812" alt="image" src="https://github.com/user-attachments/assets/7be936a0-26dd-4bc9-849f-4c74aff9c6e1" />
 
 **Credential obtained:** `backup@spookysec.local : backup2517860`
 
@@ -155,14 +155,14 @@ With the `backup` account's credentials, Impacket's `secretsdump.py` was run aga
 secretsdump.py spookysec.local/backup:backup2517860@10.48.160.211
 ```
 
-![secretsdump.py dumping NTLM hashes for every domain account](images/attactive-dc-12.png)
+<img width="1501" height="812" alt="image" src="https://github.com/user-attachments/assets/027a78d8-2ade-49c2-8495-25abafb6972d" />
 
 This dumped NTLM hashes and Kerberos AES keys for **every account in the domain**, including:
 
 - `Administrator:500:...:0e0363213e37b94221497260b0bcb4fc:::`
 - `krbtgt`, `svc-admin`, `backup`, and all other domain users
 
-![Additional AES/DES Kerberos keys dumped for all users](images/attactive-dc-13.png)
+<img width="1499" height="812" alt="image" src="https://github.com/user-attachments/assets/3f109b27-5f74-4696-8fcf-706df0a1e707" />
 
 ### Step 9 — Pass-the-Hash as Administrator
 
@@ -178,7 +178,7 @@ This dropped into an interactive shell as `thm-ad\administrator`, confirmed with
 TryHackMe{4ctiveD1rectoryM4st3r}
 ```
 
-![Administrator shell via pass-the-hash, root flag retrieved](images/attactive-dc-13.png)
+<img width="1499" height="812" alt="image" src="https://github.com/user-attachments/assets/b785b180-f91c-4d7f-a57e-a406a8124d9b" />
 
 ### Step 10 — Collecting Remaining Flags
 
@@ -188,7 +188,7 @@ Still inside the Administrator WinRM session, the other users' desktops were che
 TryHackMe{K3rb3r0s_Pr3_4uth}
 ```
 
-![svc-admin user flag retrieved](images/attactive-dc-14.png)
+<img width="1505" height="812" alt="image" src="https://github.com/user-attachments/assets/c75fbbba-15c4-4926-b0f5-b76b0d906e32" />
 
 And the `backup` account's desktop contained a privilege-escalation flag:
 
@@ -196,7 +196,7 @@ And the `backup` account's desktop contained a privilege-escalation flag:
 TryHackMe{B4ckM3UpSc0tty!}
 ```
 
-![backup account PrivEsc flag retrieved](images/attactive-dc-15.png)
+<img width="1497" height="812" alt="image" src="https://github.com/user-attachments/assets/c7c0d30e-16bc-4dfb-9a3c-fe16e5906c90" />
 
 ---
 
