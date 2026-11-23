@@ -1,9 +1,9 @@
 # TryHackMe — Attacktive Directory: Penetration Test Report
 
-**Target:** `10.48.160.211` (ATTACKTIVEDIRECTORY, domain `spookysec.local`)
-**Attacker host:** THM AttackBox (`10.48.86.152`)
-**Date:** 23 November 2026
-**Objective:** Enumerate and compromise a Windows Active Directory Domain Controller, escalating from anonymous network access to Domain Administrator.
+**Target:** `10.48.160.211` (ATTACKTIVEDIRECTORY, domain `spookysec.local`)        
+**Attacker host:** THM AttackBox (`10.48.86.152`)        
+**Date:** 23 November 2026        
+**Objective:** Enumerate and compromise a Windows Active Directory Domain Controller, escalating from anonymous network access to Domain Administrator.        
 
 ---
 
