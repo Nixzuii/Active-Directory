@@ -77,7 +77,7 @@ A wordlist of candidate usernames (`userlist.txt`) was downloaded, then fed to `
 kerbrute userenum -d spookysec.local --dc 10.48.160.211 userlist.txt
 ```
 
-![kerbrute discovering valid usernames](images/attactive-dc-4.png)
+<img width="1499" height="812" alt="image" src="https://github.com/user-attachments/assets/d1ee79b1-c5fe-4319-9e5d-e2f58b6fa1cc" />
 
 This returned a list of **valid usernames** (e.g. `james`, `svc-admin`, `robin`, `darkstar`, `administrator`, `backup`, `paradox`, `ori`), without needing any credentials at all.
 
@@ -89,7 +89,7 @@ The valid usernames were saved to `valid_users.txt` and tested with Impacket's `
 python3.9 /opt/impacket/examples/GetNPUsers.py spookysec.local/ -dc-ip 10.48.160.211 -usersfile valid_users.txt -request
 ```
 
-![GetNPUsers.py returning an AS-REP hash for svc-admin](images/attactive-dc-5.png)
+<img width="1497" height="812" alt="image" src="https://github.com/user-attachments/assets/a34b7be0-caa9-44d5-a70a-053adec12a40" />
 
 Only one account, **`svc-admin`**, had pre-authentication disabled, and its AS-REP hash (`$krb5asrep$23$svc-admin@...`) was captured for offline cracking.
 
@@ -103,11 +103,11 @@ The captured hash was cracked offline with `hashcat`, mode `18200` (Kerberos 5, 
 hashcat -m 18200 hash.txt passwordlist.txt
 ```
 
-![hashcat starting the AS-REP cracking job](images/attactive-dc-6.png)
+<img width="1498" height="812" alt="image" src="https://github.com/user-attachments/assets/e697e3d2-9cb7-463e-b1ae-d46ec908b4c0" />
 
 Within seconds, the password was recovered:
 
-![hashcat reporting the cracked password: svc-admin : management2005](images/attactive-dc-7.png)
+<img width="1502" height="812" alt="image" src="https://github.com/user-attachments/assets/c04b789f-3ed6-4862-8e09-b830b2dabad1" />
 
 **Credential obtained:** `svc-admin : management2005`
 
