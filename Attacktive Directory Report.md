@@ -49,11 +49,11 @@ A full TCP port scan was run against the target:
 nmap -p- -T4 -v 10.48.160.211
 ```
 
-![Full port scan in progress](images/attactive-dc-1.png)
+<img width="1499" height="812" alt="image" src="https://github.com/user-attachments/assets/d7bd9176-0eef-41b7-8d19-56aae2e7967a" />
 
 The scan completed and revealed a classic Active Directory Domain Controller port footprint: DNS (53), Kerberos (88), RPC (135), SMB (139/445), LDAP (389/636/3268/3269), WinRM (5985/47001), and RDP (3389).
 
-![Completed nmap results showing AD ports](images/attactive-dc-2.png)
+<img width="1498" height="812" alt="image" src="https://github.com/user-attachments/assets/5ca3d71e-2f2a-4119-a14c-612ad2abaeaa" />
 
 **What this tells us:** This is a Domain Controller (LDAP + Kerberos + SMB together is the signature). This immediately points toward AD-specific attacks rather than generic web/service exploitation.
 
@@ -65,7 +65,7 @@ The scan completed and revealed a classic Active Directory Domain Controller por
 crackmapexec smb 10.48.160.211
 ```
 
-![Identifying the domain name spookysec.local](images/attactive-dc-3.png)
+<img width="1498" height="812" alt="image" src="https://github.com/user-attachments/assets/cf15e702-0041-473e-ade5-9457871857ff" />
 
 This revealed the hostname `ATTACKTIVEDIRECTORY` and, critically, the domain name **`spookysec.local`** — needed for every subsequent Kerberos/LDAP command.
 
