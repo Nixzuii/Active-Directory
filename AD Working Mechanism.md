@@ -64,3 +64,6 @@ Forest
 **Key points**:
 
 - **The forest is the true security boundary in AD**, not the domain. Admins from one forest don't automatically control another forest.
+- All domains in a forest share:
+
+  - **Schema**: the blueprint defining what types of objects and attributes can exist (like a form template)
