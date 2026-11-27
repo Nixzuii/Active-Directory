@@ -112,3 +112,12 @@ Forest
 | **Forest** | Manual, connects two entire forests |
 | **External** | Manual, connects to a single domain in another forest, non-transitive |
 | **Realm** | Connects AD to a non-Windows Kerberos system (like Linux) |
+
+**Direction and transitivity**:
+
+- **One-way**: A trusts B, but B doesn't trust A
+- **Two-way**: both trust each other
+- **Transitive**: if A trusts B and B trusts C, then A trusts C automatically
+- **Non-transitive**: the trust stops at the two parties
+
+*Important*: A trust only creates a path. It does not automatically grant access. Admins must still give permissions to specific users or groups.
