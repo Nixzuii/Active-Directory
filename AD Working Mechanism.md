@@ -106,3 +106,5 @@ Forest
 
 | Type | Description |
 | :--- | :--- |
+| **Parent-child** | Automatic, between a parent and child domain in a tree |
+| **Tree-root** | Automatic, between roots of trees in the same forest |
