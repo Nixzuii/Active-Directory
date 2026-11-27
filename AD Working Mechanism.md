@@ -69,3 +69,6 @@ Forest
   - **Schema**: the blueprint defining what types of objects and attributes can exist (like a form template)
   - **Configuration partition**: info about the forest structure
   - **Global Catalog (GC)**: a searchable index of objects from all domains
+
+- The first domain created is the forest root domain. It holds two powerful groups: Enterprise Admins and Schema Admins.
+
