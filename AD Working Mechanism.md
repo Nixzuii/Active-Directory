@@ -78,7 +78,14 @@ Forest
 
 **Analogy**: A small branch office with a photocopy of the registry book. They can look things up and verify students, but they can't edit the original. Changes only come from head office.
 
-**Why use it**
+**Why use it:**
 
 - For remote branch offices with weak physical security or poor internet.
 - If the RODC is stolen or hacked, the attacker can't modify AD or easily steal all passwords
+
+**Key features:**
+
+- **One-way replication**: only receives updates from a full (writable) DC
+- **Password Replication Policy (PRP)**: the admin decides which users' passwords are cached on the RODC. By default, almost none are cached. This limits damage if stolen.
+- **Admin role separation**: a local person can be given admin rights on the RODC without getting domain-wide power
+- Forwards password changes and write requests to a writable DC.
