@@ -89,3 +89,9 @@ Forest
 - **Password Replication Policy (PRP)**: the admin decides which users' passwords are cached on the RODC. By default, almost none are cached. This limits damage if stolen.
 - **Admin role separation**: a local person can be given admin rights on the RODC without getting domain-wide power
 - Forwards password changes and write requests to a writable DC.
+
+## 6. Trust Relationship
+
+**What it is**: A connection between two domains (or forests) that allows users in one to access resources in the other.
+
+**Analogy**: Two schools sign an agreement: "Students from your school can use our library." Without it, they'd be treated as strangers.
