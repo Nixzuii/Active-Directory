@@ -16,4 +16,13 @@ Before touching how AD works lets first get familiar with the AD Components. Let
 
 ## 2. Domain Controller (DC)
 
-**What it is**: The actual server that runs Active Directory for a domain. It stores a copy of the AD database (a file called NTDS.dit) and answers login requests.
+**What it is**: The actual server that runs Active Directory for a domain. It stores a copy of the AD database (a file called NTDS.dit) and answers login requests.  
+**Analogy**: The school's security gate and office staff. Everyone must go through them to get verified.
+
+**Key points**:
+
+- **Authenticates** users (checks your identity)
+- **Authorizes** access (decides what you can use)
+- Stores the AD database
+- Applies Group Policy
+- Runs services like DNS and Kerberos (KDC)
