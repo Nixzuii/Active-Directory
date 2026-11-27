@@ -14,3 +14,11 @@ Without an AD, imagine a company with 500 computers. If a new employee joins the
 3. **Security rules in one place**: The admin can say "everyone must use a password of 12+ characters" and it applies to every computer.
 4. **Groups save time**: Instead of giving 50 people access to a folder one by one, you put them in a group and give access to the group.
 5. **Control and tracking**: We can see who logged in, when, and from where.
+
+## Common AD vulnerabilities.
+
+Because AD holds the "keys to the kingdom," attackers love targeting it. If they take over AD, they can control the whole company. Here are the common weaknesses, again in simple terms:
+
+| Header 1 | Header 2 |
+| :--- | :--- |
+| **Weak or reused passwords** | Row 1, Col 2 |
