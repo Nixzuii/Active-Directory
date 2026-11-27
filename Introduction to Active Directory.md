@@ -29,7 +29,7 @@ Because AD holds the "keys to the kingdom," attackers love targeting it. If they
 | **Misconfigured permissions (ACLs)** | A door was left unlocked by mistake. Attackers find paths from a normal user to an admin. |
 | **Legacy protocols (NTLM, SMBv1, LLMNR)** | Old, weak security methods that are easy to trick or intercept. |
 | **Unconstrained delegation** | A server is trusted too much and can pretend to be any user. Attackers abuse that trust. |
-|||
-|||
-|||
-|||
+| **Credentials stored in Group Policy** | Passwords accidentally saved in shared files anyone can read. |
+| **Weak AD Certificate Services (AD CS) setup** | Misconfigured certificate templates let attackers request an ID card for an admin |
+| **No monitoring or logging** | Nobody watching the cameras, so break-ins go unnoticed. |
+| **Service accounts with never-expiring passwords** | A key that is never changed, so a stolen copy works forever. |
