@@ -23,3 +23,5 @@ Because AD holds the "keys to the kingdom," attackers love targeting it. If they
 | :--- | :--- |
 | **Weak or reused passwords** | Like using "1234" as your locker code. Attackers guess it (password spraying, brute force). |
 | **Too many admin accounts (excess privileges)** | Giving master keys to too many people. If one is hacked, the attacker gets everything. |
+| Kerberoasting | Attackers request special service tickets and crack them offline to discover passwords of service accounts. |
+| **Pass-the-Hash / Pass-the-Ticket** | Instead of stealing your password, the attacker steals the "proof you logged in" and reuses it, like copying your hall pass. |
