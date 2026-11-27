@@ -105,4 +105,4 @@ Forest
 **Types of trusts**:
 
 | Type | Description |
-| !--- | !--- |
+| :--- | :--- |
