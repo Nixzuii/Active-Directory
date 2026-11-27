@@ -4,4 +4,4 @@ Before touching how AD works lets first get familiar with the AD Components. Let
 
 ## 1. Domain
 
-A domain is a logical boundary, a group of users, computers, and resources that share the same AD database and the same security rules. It has a name like `company.com`.
+**What it is**: A domain is a logical boundary, a group of users, computers, and resources that share the same AD database and the same security rules. It has a name like `company.com`.  
