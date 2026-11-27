@@ -37,3 +37,5 @@ company.com            (parent)
 ├── india.company.com  (child)
 └── usa.company.com    (child)
 ```
+
+**Analogy**: The head office school (`company.com`) and its branch schools (`india.company.com`, `usa.company.com`). They all share the same family name.
