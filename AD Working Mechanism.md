@@ -101,3 +101,8 @@ Forest
 - **Trusting domain**: the one that owns the resource
 - **Trusted domain**: the one whose users get access
 - **Arrow direction**: trust points from the trusting domain to the trusted one
+
+**Types of trusts**:
+
+| Type | Description |
+| !--- | !--- |
