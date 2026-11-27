@@ -77,3 +77,8 @@ Forest
 **What it is**: A special DC that holds a read-only copy of the AD database. You cannot make changes on it directly.
 
 **Analogy**: A small branch office with a photocopy of the registry book. They can look things up and verify students, but they can't edit the original. Changes only come from head office.
+
+**Why use it**
+
+- For remote branch offices with weak physical security or poor internet.
+- If the RODC is stolen or hacked, the attacker can't modify AD or easily steal all passwords
