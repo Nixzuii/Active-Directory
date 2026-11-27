@@ -67,3 +67,5 @@ Forest
 - All domains in a forest share:
 
   - **Schema**: the blueprint defining what types of objects and attributes can exist (like a form template)
+  - **Configuration partition**: info about the forest structure
+  - **Global Catalog (GC)**: a searchable index of objects from all domains
