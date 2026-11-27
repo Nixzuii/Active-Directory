@@ -25,3 +25,9 @@ Because AD holds the "keys to the kingdom," attackers love targeting it. If they
 | **Too many admin accounts (excess privileges)** | Giving master keys to too many people. If one is hacked, the attacker gets everything. |
 | **Kerberoasting** | Attackers request special service tickets and crack them offline to discover passwords of service accounts. |
 | **Pass-the-Hash / Pass-the-Ticket** | Instead of stealing your password, the attacker steals the "proof you logged in" and reuses it, like copying your hall pass. |
+| **Unpatched Domain Controllers** | Old software with known holes. Examples include Zerologon and PrintNightmare, which let attackers take over servers. |
+| **Misconfigured permissions (ACLs)** | A door was left unlocked by mistake. Attackers find paths from a normal user to an admin. |
+|||
+|||
+|||
+|||
