@@ -108,3 +108,7 @@ Forest
 | :--- | :--- |
 | **Parent-child** | Automatic, between a parent and child domain in a tree |
 | **Tree-root** | Automatic, between roots of trees in the same forest |
+| **Shortcut** | Manual, creates a faster path between two domains in the same forest |
+| **Forest** | Manual, connects two entire forests |
+| **External** | Manual, connects to a single domain in another forest, non-transitive |
+| **Realm** | Connects AD to a non-Windows Kerberos system (like Linux) |
