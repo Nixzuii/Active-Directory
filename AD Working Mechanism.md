@@ -29,4 +29,10 @@ Before touching how AD works lets first get familiar with the AD Components. Let
 
 ## 3. Tree
 
-**What it is**: A collection of domains that share a continuous naming structure (a common DNS namespace), connected in a parent-child hierarchy.
+**What it is**: A collection of domains that share a continuous naming structure (a common DNS namespace), connected in a parent-child hierarchy.  
+**Example**:
+```bash
+company.com            (parent)
+├── india.company.com  (child)
+└── usa.company.com    (child)
+```
