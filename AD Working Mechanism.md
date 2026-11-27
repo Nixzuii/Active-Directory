@@ -26,3 +26,7 @@ Before touching how AD works lets first get familiar with the AD Components. Let
 - Stores the AD database
 - Applies Group Policy
 - Runs services like DNS and Kerberos (KDC)
+
+## 3. Tree
+
+**What it is**: A collection of domains that share a continuous naming structure (a common DNS namespace), connected in a parent-child hierarchy.
