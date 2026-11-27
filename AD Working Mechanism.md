@@ -58,3 +58,9 @@ Forest
 └── Tree 2: acquiredcorp.com
       └── uk.acquiredcorp.com
 ```
+
+**Analogy**: The whole education company that owns multiple school families, even if they have different brand names (for example, after buying another company).
+
+**Key points**:
+
+- **The forest is the true security boundary in AD**, not the domain. Admins from one forest don't automatically control another forest.
