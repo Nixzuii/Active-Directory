@@ -72,3 +72,8 @@ Forest
 
 - The first domain created is the forest root domain. It holds two powerful groups: Enterprise Admins and Schema Admins.
 
+## 5. Read Only Domain Controller
+
+**What it is**: A special DC that holds a read-only copy of the AD database. You cannot make changes on it directly.
+
+**Analogy**: A small branch office with a photocopy of the registry book. They can look things up and verify students, but they can't edit the original. Changes only come from head office.
