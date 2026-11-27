@@ -5,3 +5,11 @@ Before touching how AD works lets first get familiar with the AD Components. Let
 ## 1. Domain
 
 **What it is**: A domain is a logical boundary, a group of users, computers, and resources that share the same AD database and the same security rules. It has a name like `company.com`.  
+**Analogy**: One school. It has its own student list, its own rules, and its own principal.  
+
+**Key points**:
+
+- Every object (user, computer, group) lives inside a domain
+- The domain is the main unit of administration and security
+- Has its own security policies (password rules, lockout rules)
+- Domain admins control only their own domain by default
