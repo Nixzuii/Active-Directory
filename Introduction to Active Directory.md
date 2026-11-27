@@ -27,6 +27,8 @@ Because AD holds the "keys to the kingdom," attackers love targeting it. If they
 | **Pass-the-Hash / Pass-the-Ticket** | Instead of stealing your password, the attacker steals the "proof you logged in" and reuses it, like copying your hall pass. |
 | **Unpatched Domain Controllers** | Old software with known holes. Examples include Zerologon and PrintNightmare, which let attackers take over servers. |
 | **Misconfigured permissions (ACLs)** | A door was left unlocked by mistake. Attackers find paths from a normal user to an admin. |
+| **Legacy protocols (NTLM, SMBv1, LLMNR)** | Old, weak security methods that are easy to trick or intercept. |
+| **Unconstrained delegation** | A server is trusted too much and can pretend to be any user. Attackers abuse that trust. |
 |||
 |||
 |||
