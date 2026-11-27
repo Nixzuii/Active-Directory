@@ -19,6 +19,7 @@ Without an AD, imagine a company with 500 computers. If a new employee joins the
 
 Because AD holds the "keys to the kingdom," attackers love targeting it. If they take over AD, they can control the whole company. Here are the common weaknesses, again in simple terms:
 
-| Header 1 | Header 2 |
+| Vulnerability | Simple explanation |
 | :--- | :--- |
-| **Weak or reused passwords** | Row 1, Col 2 |
+| **Weak or reused passwords** | Like using "1234" as your locker code. Attackers guess it (password spraying, brute force). |
+| **Too many admin accounts (excess privileges)** | Giving master keys to too many people. If one is hacked, the attacker gets everything. |
