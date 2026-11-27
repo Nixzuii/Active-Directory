@@ -95,3 +95,9 @@ Forest
 **What it is**: A connection between two domains (or forests) that allows users in one to access resources in the other.
 
 **Analogy**: Two schools sign an agreement: "Students from your school can use our library." Without it, they'd be treated as strangers.
+
+**Concept**:
+
+- **Trusting domain**: the one that owns the resource
+- **Trusted domain**: the one whose users get access
+- **Arrow direction**: trust points from the trusting domain to the trusted one
