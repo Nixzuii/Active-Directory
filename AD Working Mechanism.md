@@ -13,3 +13,7 @@ Before touching how AD works lets first get familiar with the AD Components. Let
 - The domain is the main unit of administration and security
 - Has its own security policies (password rules, lockout rules)
 - Domain admins control only their own domain by default
+
+## 2. Domain Controller (DC)
+
+**What it is**: The actual server that runs Active Directory for a domain. It stores a copy of the AD database (a file called NTDS.dit) and answers login requests.
