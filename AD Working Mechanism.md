@@ -44,3 +44,17 @@ company.com            (parent)
 
 - Child domains automatically trust their parent (two-way, transitive)
 - Share the same root name
+
+## 4. Forest
+
+**What it is**: The top-level container in AD. It's a collection of one or more trees that share a common schema, configuration, and Global Catalog, but may have different naming structures.  
+
+**Example**: 
+```bash
+Forest
+├── Tree 1: company.com
+│     ├── india.company.com
+│     └── usa.company.com
+└── Tree 2: acquiredcorp.com
+      └── uk.acquiredcorp.com
+```
