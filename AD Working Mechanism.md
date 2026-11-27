@@ -38,4 +38,9 @@ company.com            (parent)
 └── usa.company.com    (child)
 ```
 
-**Analogy**: The head office school (`company.com`) and its branch schools (`india.company.com`, `usa.company.com`). They all share the same family name.
+**Analogy**: The head office school (`company.com`) and its branch schools (`india.company.com`, `usa.company.com`). They all share the same family name.  
+
+**Key points**:
+
+- Child domains automatically trust their parent (two-way, transitive)
+- Share the same root name
